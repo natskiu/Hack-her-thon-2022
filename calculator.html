@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel = "stylesheet" type = "text/css" href = "CSS/calculator_style.css">
+<body bgcolor=#FFFFFF text=000000>
+  <nav>
+    <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "calculator.html">Calculator</a></li>
+        <li><a href = "data_visualisation.html">Data Visualisation</a></li>
+    </ul>
+</nav>
+  <center>
+    <h1>Carbon-footprint Calculator</h1>
+
+    <p></p>
+
+    <form action="/action_page.php">
+      <label for="food">Choose a food category:</label>
+        <select id="opts" onchange="showForm()">
+            <option value="0">Select Option</option>
+            <option value="1">Agricultural processed</option>
+            <option value="2">Animal husbandry</option>
+            <option value="3">Crops</option>
+            <option value="4">Fishing</option>
+        </select>
+
+        <div id="f1" style="display:none">
+            <form name="form1">
+              <label for="food">Choose a food:</label>
+                <select id="opts" onchange="showForm()">
+                    <option value="0">Select Option</option>
+                    <option value="1">Plain bread</option>
+                    <option value="2">Coffee ground</option>
+                    <option value="3">Olive Oil</option>
+                    <option value="4">Almond milk</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="f2" style="display:none">
+            <form name="form2">
+              <label for="food">Choose a food:</label>
+                <select id="opts" onchange="showForm()">
+                    <option value="0">Select Option</option>
+                    <option value="1">Beef meat (with bone)</option>
+                    <option value="2">Cheese</option>
+                    <option value="3">Pork meat (with bone)</option>
+                    <option value="4">Chicken meat (with bone)</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="f3" style="display:none">
+            <form name="form3">
+              <label for="food">Choose a food:</label>
+                <select id="opts" onchange="showForm()">
+                    <option value="0">Select Option</option>
+                    <option value="1">Raspberry</option>
+                    <option value="2">Banana</option>
+                    <option value="3">Mushroom</option>
+                    <option value="4">Tomato</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="f4" style="display:none">
+            <form name="form4">
+              <label for="food">Choose a food:</label>
+                <select id="opts" onchange="showForm()">
+                    <option value="0">Select Option</option>
+                    <option value="1">Mackerel</option>
+                    <option value="2">Salmon</option>
+                    <option value="3">Sole</option>
+                    <option value="4">Lobster</option>
+                </select>
+            </form>
+        </div>
+
+        <script src="dropdown1.js"></script>
+
+
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </center> 
+
+</body>
+</html>
