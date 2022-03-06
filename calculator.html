@@ -2,6 +2,9 @@
 <html>
   <head>
     <title></title>
+    <?PHP
+        echo shell_exec("python script.py \"Parameter #1\" \"Parameter #2\"");
+    ?>
     <link rel = "stylesheet" type = "text/css" href = "CSS/calculator_style.css">
 <body bgcolor=#FFFFFF text=000000>
   <nav>
@@ -16,7 +19,7 @@
 
     <p></p>
 
-    <form action="/action_page.php">
+    <form action="/action_page.php" method = "POST">
       <label for="food">Choose a food category:</label>
         <select id="opts" onchange="showForm()">
             <option value="0">Select Option</option>
@@ -27,7 +30,10 @@
         </select>
 
         <div id="f1" style="display:none">
-            <form name="form1">
+            <form name="form1" action = "/result" method = "POST">
+              {% if name %}
+              <h3 style = "color: black;">The carbon footprint is </h3>
+              {% endif %}
               <label for="food">Choose a food:</label>
                 <select id="opts" onchange="showForm()">
                     <option value="0">Select Option</option>

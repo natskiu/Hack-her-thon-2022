@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename='stylesheets/calculator_style.css') }}">
+</head>
+<body bgcolor=#FFFFFF text=000000>
+
+<nav>
+    <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "new_cal.html">Calculator</a></li>
+        <li><a href = "data_visualisation.html">Data Visualisation</a></li>
+    </ul>
+</nav>
+    <center>
+    <h1>Carbon-footprint Calculator</h1>
+
+    <p></p>
+
+<form action="", method = 'post'>
+  <label for="food">Choose a food:</label>
+  <select name="food" id="food" method = "GET" action = "/">
+    {% for food in food_dict.keys() %}
+    <option value="{{food}}"> {{food}}</option>
+    {% endfor %}
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+    </center>
+</body>
+</html>
