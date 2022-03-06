@@ -12,5 +12,5 @@ Global warming is a pressing issue. Our solution is to make an interactive websi
 If you are interested in seeing the website ```git clone``` the entire repository and ```run index.html``` in your browser. 
 
 ### Data Visualisation
-The data visualisation was done on Jupyter notebooks. Go check out ```eda.ipynb``` and ```desktop.ipynb``` and see if you agree with us!
+The data visualisation was done on Jupyter notebooks. Go check out ```eda.ipynb``` and ```data vis food update.ipynb``` and see if you agree with us!
 
